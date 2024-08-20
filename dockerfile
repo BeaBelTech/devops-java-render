@@ -3,6 +3,6 @@ COPY . .
 RUN mvn clean package -DskipTest
 
 FROM eclipse-temurin:22.0.2_9-jre
-copy --from=build /target/demo-0.0.1-SNAPSHOT.jar app.jar
+copy --from=build /target/Produto-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8000
 ENTRYPOINT ["java", "-jar", "app.jar"]
