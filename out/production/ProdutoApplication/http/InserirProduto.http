@@ -1,0 +1,6 @@
+PATCH http://localhost:8080/api/produtos/atualizarParcial/23
+Content-Type: application/json
+
+{
+"nome": "Asa de boi"
+}
