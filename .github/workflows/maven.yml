@@ -22,3 +22,10 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package -DskipTests --file pom.xml
+
+    - name: Render GitHub Action
+      uses: Bounceapp/render-action@0.9.0
+      with:
+        service-id: ${{secrets.my_render_service_id}}
+        api-key: ${{secrets.my_render_api_key}}
+          
